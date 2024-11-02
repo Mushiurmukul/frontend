@@ -1,0 +1,83 @@
+
+.footer {
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text color for contrast */
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-logo p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6b6b;
+    margin: 0;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Enables row alignment */
+    justify-content: center; /* Centers links horizontally */
+    gap: 20px; /* Space between links */
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+.footer-links li {
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.footer-links li:hover {
+    color: #ff6b6b;
+}
+
+.footer-social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-icons-container {
+    background-color: #eaeaea; /* Light gray background for icons */
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.footer-icons-container img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-icons-container:hover {
+    background-color: #ff6b6b; /* Adds a pop of color on hover */
+}
+
+.footer-copyright {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #777; /* Softer gray for copyright text */
+}
+
+.footer-copyright hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Light gray line */
+    margin: 20px 0;
+}

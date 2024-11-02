@@ -1,0 +1,97 @@
+.navbar{
+    display: flex;
+    justify-content:space-around;
+}
+.nav-logo{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+.nav-logo p{
+    font-size: 38px;
+    color: rgb(41, 41, 41);
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #626262; /* Default text color */
+    gap: 40px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative; /* For positioning the underline */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  /* Add underline using a pseudo-element */
+  .nav-menu li::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Position underline just below the text */
+    left: 0;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #ff6347; /* Fixed color for the underline */
+    transition: width 0.3s; /* Smooth transition for the underline */
+  }
+  
+  /* Hover effect: Change text color and expand underline */
+  .nav-menu li:hover {
+    color: #ff6347; /* Change to your desired hover color */
+  }
+  
+  .nav-menu li:hover::after {
+    width: 100%; /* Expand the underline when hovered */
+  }
+  
+  /* Active state: When a menu item is selected */
+  .nav-menu li.active {
+    color: #ff6347; /* Keep the text red */
+  }
+  
+  .nav-menu li.active::after {
+    width: 100%; /* Keep the underline visible */
+  }
+  
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap:40px;
+}
+
+.nav-login-cart button{
+    width:100px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 70px;
+    color: #515151;
+    font-size:20px;
+    font-weight: 500;
+    background: white;
+}
+.nav-login-cart button:active{
+    background: #f3f3f3;
+}
+.nav-cart-count{
+    width:22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size:14px;
+    background: red;
+    color: white;
+
+}

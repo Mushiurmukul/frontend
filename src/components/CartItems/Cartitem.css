@@ -1,0 +1,178 @@
+/* Main container styling for cart items */
+.cartitem {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cartitems-format {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+hr {
+    border: 0.5px solid #e0e0e0;
+    margin: 10px 0;
+}
+
+/* Product image styling */
+.carticon-product-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Text styling for product details */
+.cartitems-format p {
+    color: #555;
+    font-size: 16px;
+    text-align: center;
+}
+
+.cartitems-quantity {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: default;
+}
+
+/* Total price styling */
+.cartitems-format p:nth-child(5) {
+    font-weight: bold;
+    color: #e63946;
+}
+.carticon-product-icon2{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+}
+.carticon-product-icon3{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+/* Remove button styling */
+/*.cartitems-format img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}*/
+
+.cartitems-format img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .cartitems-format-main, .cartitems-format {
+        grid-template-columns: 1fr 1.5fr 1fr 1fr;
+    }
+
+    .cartitems-format img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .cartitems-format p, .cartitems-quantity {
+        font-size: 14px;
+    }
+}
+.cartitems-down{
+    display: flex;
+    margin: 100px 0px;
+}
+.cartitems-total{
+    flex:1;
+    display: flex;
+    flex-direction:column;
+    margin-right:200px;
+    gap: 00px;
+}
+.cartitems-total-item{
+    display: flex;
+    justify-content:space-between;
+    padding: 0px 0px;
+}
+.cartitems-total button{
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: red;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cartitems-promocode{
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+}
+.cartitems-promocode p{
+    color: #555;
+}
+.cartitems-promobox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cartitems-promobox input {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    background-color: #ffffff;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+}
+
+.cartitems-promobox input:focus {
+    border-color: #4CAF50; /* Highlight color when focused */
+}
+
+.cartitems-promobox button {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cartitems-promobox button:hover {
+    background-color: #4CAF50; /* Slightly different color on hover */
+}

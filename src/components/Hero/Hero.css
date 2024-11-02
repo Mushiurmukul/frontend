@@ -1,0 +1,159 @@
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hero Container */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f9f9f9; /* Light background color */
+  height: 80vh;
+  position: relative;
+  padding-left: 10%;
+  overflow: hidden;
+  margin-top: -50;
+  background: linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%);
+}
+
+/* Left Side (Text Section) */
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 5%;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.hero-left h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666; /* Dark gray text for contrast */
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 15px;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+.hero-left div p {
+  font-size: 42px;
+  font-weight: 700;
+  color: #333; /* Dark text color */
+  margin: 5px 0;
+  line-height: 1.2;
+  opacity: 0;
+  animation: fadeInUp 1.8s ease-in-out forwards;
+}
+
+/* Hand Icon Animation */
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeInUp 2s ease-in-out forwards;
+}
+
+.hero-hand-icon img {
+  height: 28px;
+  width: auto;
+  animation: bounceIn 2.2s ease-in-out forwards;
+}
+
+/* Latest Collection Button Animation */
+.hero-latest-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6b6b; /* Light coral color */
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 30px;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  animation: fadeInUp 2.5s ease-in-out forwards;
+}
+
+.hero-latest-btn img {
+  margin-left: 15px;
+  width: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-latest-btn:hover img {
+  transform: translateX(10px);
+}
+
+/* Right Side (Image Section) */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
+  opacity: 0;
+  animation: slideInRight 2s ease-in-out forwards;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  opacity: 0;
+  animation: slideInRight 2.5s ease-in-out forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    align-items: center;
+  }
+
+  .hero-right img {
+    max-width: 100%;
+  }
+}
